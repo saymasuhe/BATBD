@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-main">
+
+    <!-- Registration Module -->
+    <div class="container">
+        <div class="row frm-pg">
+            <div class="col-xl-6 d-flex justify-content-center justify-content-xl-start text-center text-xl-start">
+                <div class="cmp-logo">
+                    <img class="logo-lg" src="./assets/images/logo-lg.png" alt="" srcset="">
+                    <p class="cmp-text">Reconnect and Collaborate with <br class="d-none d-xl-block"> Your Ex-Colleagues at BAT BD</p>
+                </div>
+            </div>
+            <div class="col-xl-6 d-flex justify-content-center justify-content-xl-end mt-5 mt-xl-0">
+                <div class="frm-wrap w-100">
+                    <form action="#">
+                        
+                        <h3 class="fm-title text-center text-xl-start">Sign Up</h3>
+
+                        <div class="row">
+                            <div class="mb-2 pe-sm-0 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" name="fullname">
+                            </div>
+                            <div class="mb-2 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Preferred Name" aria-label="Preferred Name" name="preferred-name">
+                            </div>
+                            <div class="mb-2 col-12">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email">
+                            </div>
+                            <div class="mb-2 pe-sm-0 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Mobile number" aria-label="Mobile number" name="mbl-number">
+                            </div>
+                            <div class="mb-2 col-sm-6">
+                                <div class="input-icon-end">
+                                    <input type="password" class="form-control" placeholder="Set a password" aria-label="Set a password" name="password">
+                                    <img src="./assets/images/icons/eye-close.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="mb-2 pe-sm-0 col-sm-6">
+                                <div class="input-icon-end">
+                                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date of birth" aria-label="dob" name="dob">
+                                    <img src="./assets/images/icons/calender.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="mb-2 col-sm-6">
+                                <div class="custom-select">
+                                    <select name="gender" id="gender">
+                                        <option value="">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-2 col-12">
+                                <div class="input-icon-end">
+                                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="date-picker form-control" placeholder="When did you join BAT?" aria-label="When joined BAT" name="bat-join-date">
+                                    <img src="./assets/images/icons/calender.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="mb-2 pe-sm-0 col-sm-5">
+                                <input type="text" class="form-control" placeholder="Which function?" aria-label="Function" name="function">
+                            </div>
+                            <div class="mb-2 col-sm-7">
+                                <div class="input-icon-end">
+                                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="date-picker form-control" placeholder="When did you leave?" aria-label="When leave BAT" name="bat-leave">
+                                    <img src="./assets/images/icons/calender.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4 mb-5 align-items-center">
+                            <div class="col-sm-6">
+                                <button type="button" class="btn btn-round btn-gray bg-gray text-light px-5 py-2 fs-20">Sign Up</button>
+                            </div>
+                        </div>
+
+                        <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --end Registraion Module -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-2 mb-lg-0">
+                    <p class="footer-text fw-semibold">© 2024 - <br> Beyond BATBD. All rights reserved</p>
+                </div>
+                <div class="col-lg-4 mb-2 mb-lg-0">
+                    <p class="footer-text"><span class="text-muted">Designed by</span> <i>Intelligent Machines</i> <br> <span class="text-muted">Built by</span> <i>Webbly Solutions</i></p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="footer-text"><span class="fw-semibold">Special thanks to</span> <br> Shafayet Kamal Shiddiki</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+<script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+
+      for (j = 1; j < ll; j++) {
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function(e) {
+            var y, i, k, s, h, sl, yl;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            sl = s.length;
+            h = this.parentNode.previousSibling;
+
+            for (i = 0; i < sl; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                yl = y.length;
+
+                for (k = 0; k < yl; k++) {
+                  y[k].removeAttribute("class");
+                }
+
+                this.setAttribute("class", "same-as-selected");
+                break;
+              }
+            }
+
+            h.click();
+        });
+        b.appendChild(c);
+      }
+
+      x[i].appendChild(b);
+      a.addEventListener("click", function(e) {
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        
+      var x, y, i, xl, yl, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    
+    document.addEventListener("click", closeAllSelect);
+</script>
